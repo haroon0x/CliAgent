@@ -1,0 +1,16 @@
+[project]
+name = "theagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain[openai]>=0.3.26",
+    "pytest>=8.4.1",
+]
+
+[project.scripts]
+theagent = "theagent.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
