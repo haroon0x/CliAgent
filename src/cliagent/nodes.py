@@ -1,5 +1,5 @@
 from pocketflow import Node
-from cliagent.utils.call_llm import AlchemistAIProxy, GeneralLLMProxy
+from cliagent.utils.call_llm import AlchemistAIProxy
 import ast
 import os
 import shutil
