@@ -89,16 +89,13 @@ flowchart TD
     UTL3 --> F1
     U2 <-- F1
 
-    %% Style for high contrast
+    %% Style for high contrast (GitHub supports only 'style' per node or subgraph)
     style User fill:#222,color:#fff,stroke:#111,stroke-width:2px
     style Entrypoint fill:#0057b7,color:#fff,stroke:#003366,stroke-width:2px
     style Flow fill:#00897b,color:#fff,stroke:#004d40,stroke-width:2px
     style Nodes fill:#c62828,color:#fff,stroke:#7f0000,stroke-width:2px
     style Utils fill:#6a1b9a,color:#fff,stroke:#38006b,stroke-width:2px
     style Cloud fill:#f9a825,color:#222,stroke:#b28704,stroke-width:2px
-    %% Node text bold for visibility
-    classDef boldText fill:none,color:#fff,font-weight:bold,font-size:18px;
-    class U1,U2,M1,M2,F1,F2,N1,N2,N3,N4,N5,N6,N7,N8,N9,N10,N11,N12,UTL1,UTL2,UTL3,C1 boldText;
 ```
 <!-- ARCHITECTURE DIAGRAM END -->
 
