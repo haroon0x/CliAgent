@@ -328,7 +328,7 @@ class AlchemistAIProxy:
         """Alias for suggest_type_annotations method."""
         return self.suggest_type_annotations(code, model_name)
 
-class GeneralLLMProxy:
+
     def __init__(self):
         load_dotenv()
         self.openai_api_key = os.environ.get("OPENAI_API_KEY")

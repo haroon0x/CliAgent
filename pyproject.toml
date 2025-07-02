@@ -5,7 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "langchain[openai]>=0.3.26",
+    "pocketflow>=0.0.1",
+    "python-dotenv>=1.0.0",
+    "langchain-openai==0.3.27",
+    "pyyaml>=6.0",
     "pytest>=8.4.1",
 ]
 
@@ -14,3 +17,7 @@ cliagent = "cliagent.main:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
