@@ -1,11 +1,11 @@
 import argparse
 import os
 import sys
-from theagent.flow import (
+from cliagent.flow import (
     create_doc_agent_flow, create_enhanced_agent_flow, create_simple_enhanced_flow,
     create_chat_flow
 )
-from theagent.utils.call_llm import AlchemistAIProxy
+from cliagent.utils.call_llm import AlchemistAIProxy
 
 class Args:
     pass
@@ -47,9 +47,9 @@ def run_sync_flow(flow, shared):
     """Run a synchronous flow."""
     return flow.run(shared)
 
-def chat_with_theagent(args_obj, llm_proxy):
+def chat_with_cliagent(args_obj, llm_proxy):
     """Enhanced chat function with better context awareness and error handling."""
-    print("\n[TheAgent Chat] Type your instructions or questions. Type 'exit' to quit.")
+    print("\n[CliAgent Chat] Type your instructions or questions. Type 'exit' to quit.")
     print("[TIP] Try: 'list files', 'read main.py', 'generate docstrings for main.py', or ask general questions.\n")
     
     shared = setup_shared_context(args_obj)
@@ -61,7 +61,7 @@ def chat_with_theagent(args_obj, llm_proxy):
         try:
             user_input = input('You: ')
             if user_input.strip().lower() in {'exit', 'quit', 'bye'}:
-                print('[GOODBYE] Thanks for using TheAgent!')
+                print('[GOODBYE] Thanks for using CliAgent!')
                 break
             
             # Add user message to history
@@ -74,7 +74,7 @@ def chat_with_theagent(args_obj, llm_proxy):
             try:
                 result = flow.run(shared)
                 if result:
-                    print(f"TheAgent: {result}")
+                    print(f"CliAgent: {result}")
                     shared['history'].append({'role': 'agent', 'content': result})
             except Exception as e:
                 handle_error(e, shared, args_obj)
@@ -94,8 +94,8 @@ def chat_with_theagent(args_obj, llm_proxy):
             shared = setup_shared_context(args_obj)
 
 def main():
-    """Main entry point for TheAgent."""
-    parser = argparse.ArgumentParser(description="TheAgent - AI-powered code assistant")
+    """Main entry point for CliAgent."""
+    parser = argparse.ArgumentParser(description="CliAgent - AI-powered code assistant")
     
     # File and agent options
     parser.add_argument("--file", "-f", help="Python file to process")
@@ -140,7 +140,7 @@ def main():
         if args_obj.chat:
             # Chat mode
             print("[INFO] Starting chat mode...")
-            chat_with_theagent(args_obj, llm_proxy)
+            chat_with_cliagent(args_obj, llm_proxy)
         elif args_obj.file and args_obj.agent:
             # File processing mode
             print("[INFO] Starting processing...")

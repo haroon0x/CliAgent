@@ -1,5 +1,5 @@
 [project]
-name = "theagent"
+name = "cliagent"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [project.scripts]
-theagent = "theagent.main:main"
+cliagent = "cliagent.main:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

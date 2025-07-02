@@ -1,10 +1,10 @@
-from pocketflow import Flow
-from theagent.nodes import (
+from cliagent.nodes import (
     DocAgentNode, SummaryAgentNode, TestGenerationAgentNode, BugDetectionAgentNode,
     RefactorCodeAgentNode, TypeAnnotationAgentNode, MigrationAgentNode,
     IntentRecognitionNode, ClarificationNode, FileManagementNode, SafetyCheckNode,
     ContextAwarenessNode, ErrorHandlingNode, UserApprovalNode
 )
+from pocketflow import Flow
 
 def create_doc_agent_flow(args, llm_proxy):
     # Example: just use the doc agent node directly

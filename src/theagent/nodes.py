@@ -1,5 +1,5 @@
 from pocketflow import Node
-from theagent.utils.call_llm import AlchemistAIProxy, GeneralLLMProxy
+from cliagent.utils.call_llm import AlchemistAIProxy, GeneralLLMProxy
 import ast
 import os
 import shutil
@@ -670,7 +670,7 @@ class FileManagementNode(Node):
             
             # Create empty file
             with open(file_path, 'w') as f:
-                f.write("# Created by TheAgent\n")
+                f.write("# Created by CliAgent\n")
             
             return f"Created file: {instruction}"
         except Exception as e:

@@ -6,7 +6,7 @@ import tempfile
 import os
 import pytest
 from unittest.mock import patch, MagicMock
-from theagent.nodes import DocAgentNode, SummaryAgentNode, TypeAnnotationAgentNode, MigrationAgentNode, TestGenerationAgentNode, BugDetectionAgentNode, RefactorCodeAgentNode
+from cliagent.nodes import DocAgentNode, SummaryAgentNode, TypeAnnotationAgentNode, MigrationAgentNode, TestGenerationAgentNode, BugDetectionAgentNode, RefactorCodeAgentNode
 
 class DummyArgs:
     def __init__(self, file, output='console', llm='dummy', no_confirm=True, verbose=False, migration_target='Python 3'):

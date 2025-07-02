@@ -1,5 +1,5 @@
 """
-Pytest configuration and shared fixtures for TheAgent tests.
+Pytest configuration and shared fixtures for CliAgent tests.
 """
 import pytest
 import tempfile
@@ -10,7 +10,7 @@ from pathlib import Path
 # Add src to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from theagent.utils.call_llm import AlchemistAIProxy, GeneralLLMProxy
+from cliagent.utils.call_llm import AlchemistAIProxy, GeneralLLMProxy
 
 
 class MockArgs:

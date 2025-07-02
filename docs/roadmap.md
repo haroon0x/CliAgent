@@ -1,6 +1,6 @@
-# TheAgent Roadmap
+# CliAgent Roadmap
 
-A living roadmap for TheAgent: a CLI-first, agentic Python code automation tool. This roadmap is designed for open source contributors and users to track progress and suggest new features.
+A living roadmap for CliAgent: a CLI-first, agentic Python code automation tool. This roadmap is designed for open source contributors and users to track progress and suggest new features.
 
 ---
 
@@ -20,7 +20,7 @@ A living roadmap for TheAgent: a CLI-first, agentic Python code automation tool.
   - [ ] Cross-platform CI (Windows, Linux, Mac)
 - [ ] **PyPI Packaging**
   - [ ] Proper package structure, entry points, and metadata
-  - [ ] Publish to PyPI for `pip install theagent`
+  - [ ] Publish to PyPI for `pip install cliagent`
 - [ ] **Documentation**
   - [ ] Usage examples for every agent and mode
   - [ ] Architecture and contribution guide

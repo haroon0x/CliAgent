@@ -1,7 +1,7 @@
-# TheAgent Next-Gen Conversational CLI Plan
+# CliAgent Next-Gen Conversational CLI Plan
 
 ## Vision
-Build a world-class, developer-focused conversational CLI assistant that surpasses Gemini CLI in usability, power, and extensibility. TheAgent will be:
+Build a world-class, developer-focused conversational CLI assistant that surpasses Gemini CLI in usability, power, and extensibility. CliAgent will be:
 - As intuitive and beautiful as modern chat apps (ChatGPT, Gemini)
 - Deeply integrated with code, files, and external tools
 - Extensible, hackable, and open for plugins
@@ -29,9 +29,9 @@ Build a world-class, developer-focused conversational CLI assistant that surpass
 
 ## 3. Extensible Tooling & Actions
 - **Plugin/Extension System**: Allow users to add new tools (web search, code execution, file editing, etc.) as plugins.
-- **Actionable Agent**: TheAgent can invoke tools, not just answer (edit files, run tests, search web, etc.)
+- **Actionable Agent**: CliAgent can invoke tools, not just answer (edit files, run tests, search web, etc.)
 - **Web Search Integration**: Out-of-the-box web search node for up-to-date answers.
-- **Codebase Awareness**: TheAgent can read, summarize, and refactor code in the current project.
+- **Codebase Awareness**: CliAgent can read, summarize, and refactor code in the current project.
 - **Custom Commands**: Support for slash commands (e.g., `/search`, `/summarize`, `/run`)
 
 ---
@@ -48,26 +48,26 @@ Build a world-class, developer-focused conversational CLI assistant that surpass
 - **Multi-Agent Collaboration**: Multiple agents (e.g., code, doc, search) can collaborate in a session.
 - **Visual Output**: Render tables, diffs, and even diagrams in the terminal.
 - **Smart Suggestions**: Autocomplete for commands, file paths, and code snippets.
-- **AI Self-Evaluation**: TheAgent can review its own outputs for quality.
-- **Voice Input/Output**: (Optional) Speak to TheAgent and get spoken responses.
+- **AI Self-Evaluation**: CliAgent can review its own outputs for quality.
+- **Voice Input/Output**: (Optional) Speak to CliAgent and get spoken responses.
 - **Cloud Sync**: (Optional) Sync sessions and settings across devices.
 
 ---
 
-## 8. What Makes TheAgent Unique, Different, and Amazing?
+## 8. What Makes CliAgent Unique, Different, and Amazing?
 
 - **True Multi-Agent Collaboration**: Orchestrate multiple specialized agents (doc, test, refactor, search, etc.) in a single session, collaborating for the best result.
-- **Actionable, Not Just Chatty**: TheAgent can edit files, run tests, refactor code, fetch web results, and more—all from the chat.
+- **Actionable, Not Just Chatty**: CliAgent can edit files, run tests, refactor code, fetch web results, and more—all from the chat.
 - **Visual, Not Just Text**: Render tables, diffs, diagrams, and code structure visually in the terminal.
 - **Plugin/Extension Ecosystem**: Add new tools, agents, or integrations (e.g., Jira, GitHub, custom LLMs) as plugins.
-- **Smart Suggestions & Autocomplete**: TheAgent suggests next actions, commands, or code completions as you type.
+- **Smart Suggestions & Autocomplete**: CliAgent suggests next actions, commands, or code completions as you type.
 - **Contextual Memory & Project Awareness**: Loads and uses project context (README, codebase, docs) for more relevant, personalized help.
 - **Self-Evaluation & Quality Control**: Reviews its own outputs, warns about hallucinations, and asks for user confirmation on risky actions.
 - **Beautiful, Modern, and Fun**: Themes, emojis, onboarding, and playful responses make it delightful to use.
-- **Voice Input/Output (Coming Soon)**: Speak to TheAgent and get spoken responses—great for accessibility and fun.
+- **Voice Input/Output (Coming Soon)**: Speak to CliAgent and get spoken responses—great for accessibility and fun.
 - **Cloud Sync & Collaboration (Future)**: Sync sessions/settings across devices, or collaborate with teammates in real time.
 
-**Why use TheAgent?**
+**Why use CliAgent?**
 - Not just a chatbot—it's a true developer copilot.
 - Saves time: Automates documentation, testing, refactoring, and more, right from the terminal.
 - Extensible: Add your own tools, connect to your stack, and make it your own.
@@ -92,6 +92,6 @@ Build a world-class, developer-focused conversational CLI assistant that surpass
 ---
 
 ## 7. Success Criteria
-- Users prefer TheAgent over Gemini CLI for daily dev tasks.
+- Users prefer CliAgent over Gemini CLI for daily dev tasks.
 - Easy to extend, beautiful to use, and powerful out of the box.
 - Community contributions and plugin ecosystem thrive. 

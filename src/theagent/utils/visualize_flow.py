@@ -54,11 +54,11 @@ class DummyLLMProxy:
 
 
 def main():
-    # Example usage: python -m theagent.utils.visualize_flow <flow_name>
+    # Example usage: python -m cliagent.utils.visualize_flow <flow_name>
     import importlib
     import inspect
     if len(sys.argv) < 2:
-        print("Usage: python -m theagent.utils.visualize_flow <flow_module>:<flow_func>")
+        print("Usage: python -m cliagent.utils.visualize_flow <flow_module>:<flow_func>")
         sys.exit(1)
     arg = sys.argv[1]
     if ':' not in arg:

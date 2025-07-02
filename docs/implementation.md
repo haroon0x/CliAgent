@@ -1,8 +1,8 @@
-# TheAgent Enhanced Implementation
+# CliAgent Enhanced Implementation
 
 ## Overview
 
-TheAgent has been enhanced with advanced features for better user experience, including improved intent recognition, clarification flows, file management actions, user feedback, safety checks, and file context awareness.
+CliAgent has been enhanced with advanced features for better user experience, including improved intent recognition, clarification flows, file management actions, user feedback, safety checks, and file output options.
 
 ## New Features
 
@@ -19,7 +19,7 @@ The `IntentRecognitionNode` provides sophisticated intent analysis that can:
 **Example Usage:**
 ```bash
 # Chat mode with enhanced intent recognition
-python -m theagent --chat
+python -m cliagent --chat
 
 # The system will understand these commands:
 > list files
@@ -136,29 +136,29 @@ Context → Intent → Safety Check → Agent → Error Handling → User Approv
 
 ### Basic Chat Mode
 ```bash
-python -m theagent --chat
+python -m cliagent --chat
 ```
 
 **Example Conversation:**
 ```
 You: list files
-TheAgent: Files in /current/directory:
+CliAgent: Files in /current/directory:
   Python files (3):
     📄 main.py
     📄 utils.py
     📄 test_main.py
 
 You: read main.py
-TheAgent: 📄 main.py:
+CliAgent: 📄 main.py:
 [file contents displayed]
 
 You: generate docstrings for main.py
-TheAgent: [Generates and displays docstrings]
+CliAgent: [Generates and displays docstrings]
 ```
 
 ### Enhanced Mode with Safety Checks
 ```bash
-python -m theagent --file main.py --agent doc --enhanced
+python -m cliagent --file main.py --agent doc --enhanced
 ```
 
 **Flow:**
@@ -170,7 +170,7 @@ python -m theagent --file main.py --agent doc --enhanced
 
 ### File Management
 ```bash
-python -m theagent --chat
+python -m cliagent --chat
 ```
 
 **Commands:**
@@ -282,7 +282,7 @@ Flows use action-based transitions:
 
 Enable debug mode for detailed logging:
 ```bash
-python -m theagent --chat --verbose
+python -m cliagent --chat --verbose
 ```
 
 This will show:

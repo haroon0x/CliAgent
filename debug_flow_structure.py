@@ -1,5 +1,5 @@
-from src.theagent.flow import create_chat_flow
-from src.theagent.utils.visualize_flow import DummyArgs, DummyLLMProxy
+from src.cliagent.flow import create_chat_flow
+from src.cliagent.utils.visualize_flow import DummyArgs, DummyLLMProxy
 
 # Create the flow
 flow = create_chat_flow(DummyArgs(), DummyLLMProxy())

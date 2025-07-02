@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-TheAgent main entry point for python -m theagent execution.
+CliAgent main entry point for python -m cliagent execution.
 """
 
-from theagent.main import main
+from cliagent.main import main
 
 if __name__ == "__main__":
     main() 

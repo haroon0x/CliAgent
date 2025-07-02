@@ -1,11 +1,11 @@
 """
-Comprehensive tests for TheAgent nodes with better coverage and validation.
+Comprehensive tests for CliAgent nodes with better coverage and validation.
 """
 import pytest
 import os
 import ast
 from unittest.mock import patch, MagicMock
-from theagent.nodes import (
+from cliagent.nodes import (
     DocAgentNode, SummaryAgentNode, TypeAnnotationAgentNode, 
     MigrationAgentNode, TestGenerationAgentNode, BugDetectionAgentNode, 
     RefactorCodeAgentNode, OrchestratorAgentNode, UserApprovalNode,
